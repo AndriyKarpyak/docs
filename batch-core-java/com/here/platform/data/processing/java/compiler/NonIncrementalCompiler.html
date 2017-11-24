@@ -1,0 +1,592 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>NonIncrementalCompiler - com.here.platform.data.processing.java.compiler.NonIncrementalCompiler</title>
+          <meta name="description" content="NonIncrementalCompiler - com.here.platform.data.processing.java.compiler.NonIncrementalCompiler" />
+          <meta name="keywords" content="NonIncrementalCompiler com.here.platform.data.processing.java.compiler.NonIncrementalCompiler" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.java.compiler.NonIncrementalCompiler';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../../../../../../lib/trait_big.png" />
+        <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../../package.html" class="extype" name="com.here.platform.data.processing">processing</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing.java">java</a>.<a href="package.html" class="extype" name="com.here.platform.data.processing.java.compiler">compiler</a></p>
+        <h1>NonIncrementalCompiler</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.here.platform.data.processing.java.compiler">package compiler</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NonIncrementalCompiler</span><span class="result"> extends <a href="InputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputLayers">InputLayers</a> with <a href="InputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputPartitioner">InputPartitioner</a> with <a href="OutputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputLayers">OutputLayers</a> with <a href="OutputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputPartitioner">OutputPartitioner</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The simplest interface that an actual compiler can implement.
+This leaves the maximum flexibility to the compiler implementors,
+but has no support for incremental compilation.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This is a Java friendly version of <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.compiler.NonIncrementalCompiler" class="extype" target="_top">com.here.platform.data.processing.compiler.NonIncrementalCompiler</a>.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>extended interfaces for more details</p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="OutputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputPartitioner">OutputPartitioner</a>, <a href="OutputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputLayers">OutputLayers</a>, <a href="InputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputPartitioner">InputPartitioner</a>, <a href="InputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputLayers">InputLayers</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.here.platform.data.processing.java.compiler.NonIncrementalCompiler"><span>NonIncrementalCompiler</span></li><li class="in" name="com.here.platform.data.processing.java.compiler.OutputPartitioner"><span>OutputPartitioner</span></li><li class="in" name="com.here.platform.data.processing.java.compiler.OutputLayers"><span>OutputLayers</span></li><li class="in" name="com.here.platform.data.processing.java.compiler.InputPartitioner"><span>InputPartitioner</span></li><li class="in" name="com.here.platform.data.processing.java.compiler.InputLayers"><span>InputLayers</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="com.here.platform.data.processing.java.compiler.NonIncrementalCompiler#compile" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="compile(toCompile:com.here.platform.data.processing.java.compiler.InData,parallelism:Int,logContext:com.here.platform.data.processing.logging.LogContext):com.here.platform.data.processing.java.compiler.ToPublish"></a>
+      <a id="compile(InData,Int,LogContext):ToPublish"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compile</span><span class="params">(<span name="toCompile">toCompile: <a href="package.html#InData=org.apache.spark.api.java.JavaPairRDD[com.here.platform.data.processing.java.compiler.package.InKey,com.here.platform.data.processing.java.compiler.package.InMeta]" class="extmbr" name="com.here.platform.data.processing.java.compiler.InData">InData</a></span>, <span name="parallelism">parallelism: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="logContext">logContext: <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.logging.LogContext" class="extype" target="_top">LogContext</a></span>)</span><span class="result">: <a href="package.html#ToPublish=org.apache.spark.api.java.JavaPairRDD[com.here.platform.data.processing.java.compiler.package.OutKey,com.here.platform.data.processing.java.Java.Option[com.here.platform.data.processing.java.blobstore.Payload]]" class="extmbr" name="com.here.platform.data.processing.java.compiler.ToPublish">ToPublish</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@compile(toCompile:com.here.platform.data.processing.java.compiler.InData,parallelism:Int,logContext:com.here.platform.data.processing.logging.LogContext):com.here.platform.data.processing.java.compiler.ToPublish" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compiles partitions and returns actual compiled data, if any.</p><div class="fullcomment"><div class="comment cmt"><p>Compiles partitions and returns actual compiled data, if any.
+</p></div><dl class="paramcmts block"><dt class="param">toCompile</dt><dd class="cmt"><p>the complete input metadata for the layer requested.
+                   Keys are partitioned as specified in <a href="InputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputPartitioner">com.here.platform.data.processing.java.compiler.InputPartitioner</a></p></dd><dt class="param">parallelism</dt><dd class="cmt"><p>the parallelism of both the input and the output RDDs. This parameter is normally needed
+                   to get partitioners from <a href="InputOptPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputOptPartitioner">com.here.platform.data.processing.java.compiler.InputOptPartitioner</a>
+                   and/or from <a href="OutputOptPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputOptPartitioner">com.here.platform.data.processing.java.compiler.OutputOptPartitioner</a> traits</p></dd><dt class="param">logContext</dt><dd class="cmt"><p>the context for logging the pipeline should run in</p></dd><dt>returns</dt><dd class="cmt"><p><a href="package.html#OutKey=com.here.platform.data.processing.java.catalog.partition.Key" class="extmbr" name="com.here.platform.data.processing.java.compiler.OutKey">com.here.platform.data.processing.java.compiler.OutKey</a> is the key of compiled partition.
+        <a href="../blobstore/Payload.html" class="extype" name="com.here.platform.data.processing.java.blobstore.Payload">com.here.platform.data.processing.java.blobstore.Payload</a> is the output data, if any
+        The returned keys shall be partitioned as specified in <a href="OutputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputPartitioner">com.here.platform.data.processing.java.compiler.OutputPartitioner</a></p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>please note and follow the RDD persistence policy described in com.here.platform.data.processing.driver.Executor</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.java.compiler.InputLayers#inLayers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="inLayers:com.here.platform.data.processing.java.Java.Map[String,com.here.platform.data.processing.java.Java.Set[String]]"></a>
+      <a id="inLayers:Map[String,Set[String]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inLayers</span><span class="result">: <a href="../Java$.html#Map[K,V]=java.util.Map[K,V]" class="extmbr" name="com.here.platform.data.processing.java.Java.Map">Map</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../Java$.html#Set[T]=java.util.Set[T]" class="extmbr" name="com.here.platform.data.processing.java.Java.Set">Set</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@inLayers:com.here.platform.data.processing.java.Java.Map[String,com.here.platform.data.processing.java.Java.Set[String]]" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Layers of the input catalogs that should be queried and provided to the compiler, grouped by
+input catalog and identified by catalog id and layer name.</p><div class="fullcomment"><div class="comment cmt"><p>Layers of the input catalogs that should be queried and provided to the compiler, grouped by
+input catalog and identified by catalog id and layer name.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputLayers">InputLayers</a></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.java.compiler.InputPartitioner#inPartitioner" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="inPartitioner(parallelism:Int):com.here.platform.data.processing.java.spark.partitioner.PartitionerOfKey"></a>
+      <a id="inPartitioner(Int):PartitionerOfKey"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inPartitioner</span><span class="params">(<span name="parallelism">parallelism: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="../spark/partitioner/PartitionerOfKey.html" class="extype" name="com.here.platform.data.processing.java.spark.partitioner.PartitionerOfKey">PartitionerOfKey</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@inPartitioner(parallelism:Int):com.here.platform.data.processing.java.spark.partitioner.PartitionerOfKey" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The partitioner to be applied when querying the input catalog.</p><div class="fullcomment"><div class="comment cmt"><p>The partitioner to be applied when querying the input catalog.
+</p></div><dl class="paramcmts block"><dt class="param">parallelism</dt><dd class="cmt"><p>the parallelism of the partitioner</p></dd><dt>returns</dt><dd class="cmt"><p>the input partitioner with the given parallelism</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputPartitioner">InputPartitioner</a></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.java.compiler.OutputLayers#outLayers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="outLayers:com.here.platform.data.processing.java.Java.Set[String]"></a>
+      <a id="outLayers:Set[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">outLayers</span><span class="result">: <a href="../Java$.html#Set[T]=java.util.Set[T]" class="extmbr" name="com.here.platform.data.processing.java.Java.Set">Set</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@outLayers:com.here.platform.data.processing.java.Java.Set[String]" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Layers that are expected to be produced by the compiler.</p><div class="fullcomment"><div class="comment cmt"><p>Layers that are expected to be produced by the compiler.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OutputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputLayers">OutputLayers</a></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.java.compiler.OutputPartitioner#outPartitioner" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="outPartitioner(parallelism:Int):com.here.platform.data.processing.java.spark.partitioner.PartitionerOfKey"></a>
+      <a id="outPartitioner(Int):PartitionerOfKey"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">outPartitioner</span><span class="params">(<span name="parallelism">parallelism: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="../spark/partitioner/PartitionerOfKey.html" class="extype" name="com.here.platform.data.processing.java.spark.partitioner.PartitionerOfKey">PartitionerOfKey</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@outPartitioner(parallelism:Int):com.here.platform.data.processing.java.spark.partitioner.PartitionerOfKey" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The partitioner to be applied when querying the output catalog and producing output data.</p><div class="fullcomment"><div class="comment cmt"><p>The partitioner to be applied when querying the output catalog and producing output data.
+</p></div><dl class="paramcmts block"><dt class="param">parallelism</dt><dd class="cmt"><p>the parallelism of the partitioner</p></dd><dt>returns</dt><dd class="cmt"><p>the output partitioner with the given parallelism</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OutputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputPartitioner">OutputPartitioner</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.java.compiler.NonIncrementalCompiler@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="com.here.platform.data.processing.java.compiler.OutputPartitioner">
+              <h3>Inherited from <a href="OutputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputPartitioner">OutputPartitioner</a></h3>
+            </div><div class="parent" name="com.here.platform.data.processing.java.compiler.OutputLayers">
+              <h3>Inherited from <a href="OutputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.OutputLayers">OutputLayers</a></h3>
+            </div><div class="parent" name="com.here.platform.data.processing.java.compiler.InputPartitioner">
+              <h3>Inherited from <a href="InputPartitioner.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputPartitioner">InputPartitioner</a></h3>
+            </div><div class="parent" name="com.here.platform.data.processing.java.compiler.InputLayers">
+              <h3>Inherited from <a href="InputLayers.html" class="extype" name="com.here.platform.data.processing.java.compiler.InputLayers">InputLayers</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
