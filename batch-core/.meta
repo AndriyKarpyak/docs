@@ -1,7 +1,7 @@
 [tool:gitbook]
 GERRIT_CHANGE_OWNER=Andriy Karpyak <ext-andriy.karpyak@here.com>
 GERRIT_EVENT_TYPE=change-merged
-GERRIT_PATCHSET_REVISION=2aac415ef3456328be9e3f78f4ed8b000d68f48b
+GERRIT_PATCHSET_REVISION=31cab18a6505c46d1fc0f3e9cab16f7701ccca71
 GERRIT_CHANGE_SUBJECT=OLPRPS-1048 ACF's Scaladoc needs to be configured for "passthrough" to be delivered as part of DevKit's package
 GERRIT_PROJECT=acf/acfc
 GERRIT_CHANGE_URL=https://gerrit.it.here.com/12121
