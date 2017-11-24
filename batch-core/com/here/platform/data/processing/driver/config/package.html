@@ -1,0 +1,454 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>config - com.here.platform.data.processing.driver.config</title>
+          <meta name="description" content="config - com.here.platform.data.processing.driver.config" />
+          <meta name="keywords" content="config com.here.platform.data.processing.driver.config" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.driver.config.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../../package.html" class="extype" name="com.here.platform.data.processing">processing</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing.driver">driver</a></p>
+        <h1>config</h1><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">config</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.here.platform.data.processing.driver.config.CmdLineConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CmdLineConfigextendsScallopConf"></a>
+      <a id="CmdLineConfig:CmdLineConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CmdLineConfig.html"><span class="name">CmdLineConfig</span></a><span class="result"> extends <span class="extype" name="org.rogach.scallop.ScallopConf">ScallopConf</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@CmdLineConfigextendsScallopConf" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration needed to instantiate and execute a <a href="../Driver.html" class="extype" name="com.here.platform.data.processing.driver.Driver">Driver</a>
+including additional parameters for the specific run.</p>
+    </li><li name="com.here.platform.data.processing.driver.config.CompileInConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CompileInConfigextendsProductwithSerializable"></a>
+      <a id="CompileInConfig:CompileInConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CompileInConfig.html"><span class="name">CompileInConfig</span></a><span class="params">(<span name="threads">threads: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="sorting">sorting: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@CompileInConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for functional compileIn handling in executors.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for functional compileIn handling in executors.
+</p></div><dl class="paramcmts block"><dt class="param">threads</dt><dd class="cmt"><p>defines how many compileInFn should be run in parallel threads per executor</p></dd><dt class="param">sorting</dt><dd class="cmt"><p>if true, compileIn will be executed in sorted order of partition key</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.CompileOutConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CompileOutConfigextendsProductwithSerializable"></a>
+      <a id="CompileOutConfig:CompileOutConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CompileOutConfig.html"><span class="name">CompileOutConfig</span></a><span class="params">(<span name="threads">threads: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="sorting">sorting: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@CompileOutConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for functional compileOut handling in executors.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for functional compileOut handling in executors.
+</p></div><dl class="paramcmts block"><dt class="param">threads</dt><dd class="cmt"><p>defines how many compileOutFn should be run in parallel threads per executor</p></dd><dt class="param">sorting</dt><dd class="cmt"><p>if true, compileOut will be executed in sorted order of partition key</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.CompleteConfig" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CompleteConfigextendsAnyRef"></a>
+      <a id="CompleteConfig:CompleteConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompleteConfig.html"><span class="name">CompleteConfig</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@CompleteConfigextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Provide access to the complete configuration visible to the framework
+and compilers.</p><div class="fullcomment"><div class="comment cmt"><p>Provide access to the complete configuration visible to the framework
+and compilers. This is a merge of what is specified in reference.conf
+as part of the framework, what is overridden in compilers' application.conf,
+and what is further overridden via command line parameters.
+</p></div></div>
+    </li><li name="com.here.platform.data.processing.driver.config.ConfigOverrides" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConfigOverridesextendsAnyRef"></a>
+      <a id="ConfigOverrides:ConfigOverrides"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConfigOverrides.html"><span class="name">ConfigOverrides</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@ConfigOverridesextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Overrides some configuration parameters through the command line.</p>
+    </li><li name="com.here.platform.data.processing.driver.config.DriverConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DriverConfigextendsProductwithSerializable"></a>
+      <a id="DriverConfig:DriverConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DriverConfig.html"><span class="name">DriverConfig</span></a><span class="params">(<span name="appName">appName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="history">history: <a href="HistoryConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.HistoryConfig">HistoryConfig</a></span>, <span name="parallelUploads">parallelUploads: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="parallelRetrievers">parallelRetrievers: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="numCommitPartitions">numCommitPartitions: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="sparkStorageLevels">sparkStorageLevels: <a href="SparkStorageLevelsConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.SparkStorageLevelsConfig">SparkStorageLevelsConfig</a></span>, <span name="state">state: <a href="StateConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.StateConfig">StateConfig</a></span>, <span name="schema">schema: <a href="SchemaConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.SchemaConfig">SchemaConfig</a></span>, <span name="disableIncremental">disableIncremental: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@DriverConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration needed to instantiate and configure a <a href="../Driver.html" class="extype" name="com.here.platform.data.processing.driver.Driver">com.here.platform.data.processing.driver.Driver</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration needed to instantiate and configure a <a href="../Driver.html" class="extype" name="com.here.platform.data.processing.driver.Driver">com.here.platform.data.processing.driver.Driver</a>.
+</p></div><dl class="paramcmts block"><dt class="param">appName</dt><dd class="cmt"><p>the name of the application to set in the Spark context</p></dd><dt class="param">history</dt><dd class="cmt"><p>the configuration of history publishing</p></dd><dt class="param">parallelUploads</dt><dd class="cmt"><p>the number of parallel uploads performed by the framework internally,
+                       like in data and state publishing</p></dd><dt class="param">parallelRetrievers</dt><dd class="cmt"><p>the number of parallel retrieves performed by the framework internally,
+                          like in data and state retrieving</p></dd><dt class="param">numCommitPartitions</dt><dd class="cmt"><p>the maximum number of partition to commit to in the multipart commit of DataStore</p></dd><dt class="param">sparkStorageLevels</dt><dd class="cmt"><p>the spark storage levels configuration</p></dd><dt class="param">state</dt><dd class="cmt"><p>the configuration for state</p></dd><dt class="param">schema</dt><dd class="cmt"><p>the protobundle schemas publishing configuration</p></dd><dt class="param">disableIncremental</dt><dd class="cmt"><p>disable incremental compilation</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p><a href="DriverConfig.html#numCommitPartitions:Int" class="extmbr" name="com.here.platform.data.processing.driver.config.DriverConfig#numCommitPartitions">numCommitPartitions</a> has to be smaller than 100 due to DataStore API specification</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.EnvironmentConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EnvironmentConfigextendsProductwithSerializable"></a>
+      <a id="EnvironmentConfig:EnvironmentConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EnvironmentConfig.html"><span class="name">EnvironmentConfig</span></a><span class="params">(<span name="publishing">publishing: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@EnvironmentConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for the publishing of the description of the environment where the compiler is running.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for the publishing of the description of the environment where the compiler is running.
+</p></div><dl class="paramcmts block"><dt class="param">publishing</dt><dd class="cmt"><p>publish the environment to output catalog</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.ExecutorConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ExecutorConfigextendsProductwithSerializable"></a>
+      <a id="ExecutorConfig:ExecutorConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExecutorConfig.html"><span class="name">ExecutorConfig</span></a><span class="params">(<span name="compilein">compilein: <a href="CompileInConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.CompileInConfig">CompileInConfig</a></span>, <span name="compileout">compileout: <a href="CompileOutConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.CompileOutConfig">CompileOutConfig</a></span>, <span name="reftree">reftree: <a href="RefTreeExecutorConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.RefTreeExecutorConfig">RefTreeExecutorConfig</a></span>, <span name="debug">debug: <a href="ExecutorDebugConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.ExecutorDebugConfig">ExecutorDebugConfig</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@ExecutorConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for all executors
+</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for all executors
+</p></div><dl class="paramcmts block"><dt class="param">compilein</dt><dd class="cmt"><p>Configuration for functional compileIn handling in executors</p></dd><dt class="param">compileout</dt><dd class="cmt"><p>Configuration for functional compileOut handling in executors</p></dd><dt class="param">reftree</dt><dd class="cmt"><p>Configuration for reftree executors</p></dd><dt class="param">debug</dt><dd class="cmt"><p>Configures executors behavior to simplify debugging</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.ExecutorDebugConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ExecutorDebugConfigextendsProductwithSerializable"></a>
+      <a id="ExecutorDebugConfig:ExecutorDebugConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExecutorDebugConfig.html"><span class="name">ExecutorDebugConfig</span></a><span class="params">(<span name="partitionFilter">partitionFilter: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="PartitionFilterConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.PartitionFilterConfig">PartitionFilterConfig</a>]</span>, <span name="collectStageErrors">collectStageErrors: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@ExecutorDebugConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configures executors behavior to simplify debugging.</p><div class="fullcomment"><div class="comment cmt"><p>Configures executors behavior to simplify debugging.
+</p></div><dl class="paramcmts block"><dt class="param">partitionFilter</dt><dd class="cmt"><p>the partition filter configuration; None if no filtering is desired</p></dd><dt class="param">collectStageErrors</dt><dd class="cmt"><p>if to collect runtime errors at every stage and report them in the Spark driver;
+                          this splits the Spark workload in multiple jobs, use only to debug exceptions</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.HistoryConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HistoryConfigextendsProductwithSerializable"></a>
+      <a id="HistoryConfig:HistoryConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HistoryConfig.html"><span class="name">HistoryConfig</span></a><span class="params">(<span name="layer">layer: <span class="extype" name="com.here.platform.data.processing.catalog.Layer.Name">Name</span></span>, <span name="environment">environment: <a href="EnvironmentConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.EnvironmentConfig">EnvironmentConfig</a></span>, <span name="statistics">statistics: <a href="StatisticsConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.StatisticsConfig">StatisticsConfig</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@HistoryConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration controlling how the history is published in the output catalog.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration controlling how the history is published in the output catalog.
+History is published in a generic layer and it is made of job information
+(which input catalogs and which version were used) and compilation statistics.
+This is fairly expensive operation, so the results should be cached locally.
+</p></div><dl class="paramcmts block"><dt class="param">layer</dt><dd class="cmt"><p>the layer name for the history</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.PartitionFilterConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PartitionFilterConfigextendsProductwithSerializable"></a>
+      <a id="PartitionFilterConfig:PartitionFilterConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PartitionFilterConfig.html"><span class="name">PartitionFilterConfig</span></a><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.Class">Class</span>[_ &lt;: <a href="../../debug/PartitionFilter.html" class="extype" name="com.here.platform.data.processing.debug.PartitionFilter">PartitionFilter</a>]</span>, <span name="param">param: <span class="extype" name="org.json4s.JValue">JValue</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@PartitionFilterConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">className</dt><dd class="cmt"><p>The name of the class implementing the filter, it must derive from <a href="../../debug/PartitionFilter.html" class="extype" name="com.here.platform.data.processing.debug.PartitionFilter">com.here.platform.data.processing.debug.PartitionFilter</a></p></dd><dt class="param">param</dt><dd class="cmt"><p>The json value that is passed to the appropriate <a href="../../debug/PartitionFilter.html" class="extype" name="com.here.platform.data.processing.debug.PartitionFilter">com.here.platform.data.processing.debug.PartitionFilter</a> subclass instance</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.package@Exception=Exception" class="extype" target="_top"><code>scala.Exception</code></a> if failed to load class by name, or if the class does not derive from PartitionFilter.</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.RefTreeExecutorConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RefTreeExecutorConfigextendsProductwithSerializable"></a>
+      <a id="RefTreeExecutorConfig:RefTreeExecutorConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefTreeExecutorConfig.html"><span class="name">RefTreeExecutorConfig</span></a><span class="params">(<span name="parallelResolves">parallelResolves: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@RefTreeExecutorConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for reftree executors
+</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for reftree executors
+</p></div><dl class="paramcmts block"><dt class="param">parallelResolves</dt><dd class="cmt"><p>defines how many resolves should be run in parallel threads per executor
+                        Configuration for functional compileOut handling in executors.</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.SchemaConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SchemaConfigextendsProductwithSerializable"></a>
+      <a id="SchemaConfig:SchemaConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SchemaConfig.html"><span class="name">SchemaConfig</span></a><span class="params">(<span name="publishing">publishing: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@SchemaConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for the schema publishing.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for the schema publishing.
+</p></div><dl class="paramcmts block"><dt class="param">publishing</dt><dd class="cmt"><p>publish the protobundle schemas to output catalog</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.SparkStorageLevelsConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SparkStorageLevelsConfigextendsProductwithSerializable"></a>
+      <a id="SparkStorageLevelsConfig:SparkStorageLevelsConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SparkStorageLevelsConfig.html"><span class="name">SparkStorageLevelsConfig</span></a><span class="params">(<span name="default">default: <a href="http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.storage.StorageLevel" class="extype" target="_top">StorageLevel</a></span>, <span name="catalogQueries">catalogQueries: <a href="http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.storage.StorageLevel" class="extype" target="_top">StorageLevel</a></span>, <span name="publishedPayloads">publishedPayloads: <a href="http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.storage.StorageLevel" class="extype" target="_top">StorageLevel</a></span>, <span name="persistedState">persistedState: <a href="http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.storage.StorageLevel" class="extype" target="_top">StorageLevel</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@SparkStorageLevelsConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spark storage levels used by the framework when persisting important RDDs.</p><div class="fullcomment"><div class="comment cmt"><p>Spark storage levels used by the framework when persisting important RDDs.
+</p></div><dl class="paramcmts block"><dt class="param">default</dt><dd class="cmt"><p>used for all the RDDs unless otherwise mentioned</p></dd><dt class="param">catalogQueries</dt><dd class="cmt"><p>used for metadata queried from DataStore</p></dd><dt class="param">publishedPayloads</dt><dd class="cmt"><p>used for metadata of payloads published and about to be committed</p></dd><dt class="param">persistedState</dt><dd class="cmt"><p>used for the state once saved to and loaded back from S3</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.StateConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StateConfigextendsProductwithSerializable"></a>
+      <a id="StateConfig:StateConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StateConfig.html"><span class="name">StateConfig</span></a><span class="params">(<span name="layer">layer: <span class="extype" name="com.here.platform.data.processing.catalog.Layer.Name">Name</span></span>, <span name="partitions">partitions: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@StateConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Controls how the state is published in the output catalog.</p><div class="fullcomment"><div class="comment cmt"><p>Controls how the state is published in the output catalog.
+</p></div><dl class="paramcmts block"><dt class="param">layer</dt><dd class="cmt"><p>a layer name for the state</p></dd><dt class="param">partitions</dt><dd class="cmt"><p>the number of partition the compilation state is made of</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.config.StatisticsConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StatisticsConfigextendsProductwithSerializable"></a>
+      <a id="StatisticsConfig:StatisticsConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StatisticsConfig.html"><span class="name">StatisticsConfig</span></a><span class="params">(<span name="logging">logging: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="publishing">publishing: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@StatisticsConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration for the publishing of the statistics.</p><div class="fullcomment"><div class="comment cmt"><p>Configuration for the publishing of the statistics.
+</p></div><dl class="paramcmts block"><dt class="param">logging</dt><dd class="cmt"><p>log the statistics using the ContextLogging</p></dd><dt class="param">publishing</dt><dd class="cmt"><p>publish the statistics to output catalog</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.here.platform.data.processing.driver.config.CompleteConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompleteConfig"></a>
+      <a id="CompleteConfig:CompleteConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CompleteConfig$.html"><span class="name">CompleteConfig</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@CompleteConfig" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Common definitions for CompleteConfig implementations.</p>
+    </li><li name="com.here.platform.data.processing.driver.config.ExecutorDebugConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExecutorDebugConfig"></a>
+      <a id="ExecutorDebugConfig:ExecutorDebugConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ExecutorDebugConfig$.html"><span class="name">ExecutorDebugConfig</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@ExecutorDebugConfig" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.driver.config.PartitionFilterConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PartitionFilterConfig"></a>
+      <a id="PartitionFilterConfig:PartitionFilterConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PartitionFilterConfig$.html"><span class="name">PartitionFilterConfig</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.config.package@PartitionFilterConfig" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

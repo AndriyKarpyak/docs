@@ -1,0 +1,144 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>job - com.here.platform.data.processing.driver.impl.job</title>
+          <meta name="description" content="job - com.here.platform.data.processing.driver.impl.job" />
+          <meta name="keywords" content="job com.here.platform.data.processing.driver.impl.job" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.driver.impl.job.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../../../package.html" class="extype" name="com.here.platform.data.processing">processing</a>.<a href="../../package.html" class="extype" name="com.here.platform.data.processing.driver">driver</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing.driver.impl">impl</a></p>
+        <h1>job</h1><span class="permalink">
+      <a href="../../../../../../../../index.html#com.here.platform.data.processing.driver.impl.job.package" title="Permalink" target="_top">
+        <img src="../../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">job</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.here.platform.data.processing.driver.impl.job.JobConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="JobConfigextendsProductwithSerializable"></a>
+      <a id="JobConfig:JobConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="JobConfig.html"><span class="name">JobConfig</span></a><span class="params">(<span name="catalogHrn">catalogHrn: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="catalogVersion">catalogVersion: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.utils.BaseVersion" class="extype" target="_top">BaseVersion</a>] = <span class="symbol">None</span></span>, <span name="catalogsToProcess">catalogsToProcess: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="ToProcessConfig.html" class="extype" name="com.here.platform.data.processing.driver.impl.job.ToProcessConfig">ToProcessConfig</a>] = <span class="symbol">Map()</span></span>, <span name="commitToken">commitToken: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../../index.html#com.here.platform.data.processing.driver.impl.job.package@JobConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper class for parsing partial data of a <a href="../../job/Job.html" class="extype" name="com.here.platform.data.processing.driver.job.Job">com.here.platform.data.processing.driver.job.Job</a> object.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class for parsing partial data of a <a href="../../job/Job.html" class="extype" name="com.here.platform.data.processing.driver.job.Job">com.here.platform.data.processing.driver.job.Job</a> object.</p><p>This class is used by the framework to parse the runtime configuration from multiple
+sources and the create the <a href="../../job/Job.html" class="extype" name="com.here.platform.data.processing.driver.job.Job">com.here.platform.data.processing.driver.job.Job</a> instance that actually drives the compilation.</p><p>Do not use this class directly, if not to parse configuration from JSON or similar.</p><p>In this class, all parameters are optional to allow partial filling from one configuration source,
+and merging multiple sources (for example configuration file, command line) to get all required parameters
+for a <a href="../../job/Job.html" class="extype" name="com.here.platform.data.processing.driver.job.Job">com.here.platform.data.processing.driver.job.Job</a>.
+</p></div><dl class="paramcmts block"><dt class="param">catalogHrn</dt><dd class="cmt"><p>HRN of the DataStore catalog to publish to</p></dd><dt class="param">catalogVersion</dt><dd class="cmt"><p>the version that this filter's DataStore was at when this job changeset was created</p></dd><dt class="param">catalogsToProcess</dt><dd class="cmt"><p>the set of upstream filters to use for processing, mapped from
+                         <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Catalog$@Id=Symbol" class="extype" target="_top">com.here.platform.data.processing.catalog.Catalog.Id</a> to <a href="ToProcessConfig.html" class="extype" name="com.here.platform.data.processing.driver.impl.job.ToProcessConfig">ToProcessConfig</a></p></dd><dt class="param">commitToken</dt><dd class="cmt"><p>multipart commit token</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>For unit test, synthesize a <a href="../../job/Job.html" class="extype" name="com.here.platform.data.processing.driver.job.Job">com.here.platform.data.processing.driver.job.Job</a> class directly with the parameters needed for the tests</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.driver.impl.job.ToProcessConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ToProcessConfigextendsProductwithSerializable"></a>
+      <a id="ToProcessConfig:ToProcessConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ToProcessConfig.html"><span class="name">ToProcessConfig</span></a><span class="params">(<span name="catalogHrn">catalogHrn: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="update">update: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="../../job/ToProcess.html" class="extype" name="com.here.platform.data.processing.driver.job.ToProcess">ToProcess</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../../index.html#com.here.platform.data.processing.driver.impl.job.package@ToProcessConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper class for parsing of <a href="../../job/InCatalog.html" class="extype" name="com.here.platform.data.processing.driver.job.InCatalog">com.here.platform.data.processing.driver.job.InCatalog</a> classes with partial content as part of <a href="JobConfig.html" class="extype" name="com.here.platform.data.processing.driver.impl.job.JobConfig">JobConfig</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class for parsing of <a href="../../job/InCatalog.html" class="extype" name="com.here.platform.data.processing.driver.job.InCatalog">com.here.platform.data.processing.driver.job.InCatalog</a> classes with partial content as part of <a href="JobConfig.html" class="extype" name="com.here.platform.data.processing.driver.impl.job.JobConfig">JobConfig</a>.
+In this class, all parameters are optional to allow this partial filling from one configuration source,
+and merging multiple sources (for example configuration file, command line) to get all required parameters
+for a <a href="../../job/InCatalog.html" class="extype" name="com.here.platform.data.processing.driver.job.InCatalog">com.here.platform.data.processing.driver.job.InCatalog</a> instance.
+</p></div><dl class="paramcmts block"><dt class="param">catalogHrn</dt><dd class="cmt"><p>HRN to the DataStore for this filter</p></dd><dt class="param">update</dt><dd class="cmt"><p>which versions of this dependency to process</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
