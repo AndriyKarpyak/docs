@@ -1,0 +1,162 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>debug - com.here.platform.data.processing.debug</title>
+          <meta name="description" content="debug - com.here.platform.data.processing.debug" />
+          <meta name="keywords" content="debug com.here.platform.data.processing.debug" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.debug.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing">processing</a></p>
+        <h1>debug</h1><span class="permalink">
+      <a href="../../../../../../index.html#com.here.platform.data.processing.debug.package" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.here.platform.data.processing.debug.PartitionFilter" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PartitionFilterextendsAnyRef"></a>
+      <a id="PartitionFilter:PartitionFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PartitionFilter.html"><span class="name">PartitionFilter</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.here.platform.data.processing.debug.package@PartitionFilterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Filters partitions according to user-defined predicate.</p><div class="fullcomment"><div class="comment cmt"><p>Filters partitions according to user-defined predicate.</p><p>Partition filters allow to define just a subset of partitions to process and thus are useful in debugging.
+Currently only <a href="../compiler/RefTreeCompiler.html" class="extype" name="com.here.platform.data.processing.compiler.RefTreeCompiler">com.here.platform.data.processing.compiler.RefTreeCompiler</a> is able to use partition filtering.</p><p>To provide a custom predicate, the user has to do the following:
+1. Implement the trait with a case class; implement <a href="PartitionFilter.html#shouldProcess(partition:com.here.platform.data.processing.catalog.Partition.Key):Boolean" class="extmbr" name="com.here.platform.data.processing.debug.PartitionFilter#shouldProcess">predicate</a> for filtering.
+2. Add the constructor for that subclass that accepts a single JValue argument. Extract information from this
+   argument however you like. The easiest way is to implement a case class containing your filter parameters and
+   use <a href="../driver/config/PartitionFilterConfig$.html#extractParam[T&lt;:AnyRef](json:org.json4s.JValue)(implicitevidence$1:Manifest[T]):T" class="extmbr" name="com.here.platform.data.processing.driver.config.PartitionFilterConfig#extractParam">com.here.platform.data.processing.driver.config.PartitionFilterConfig.extractParam</a> helper method.
+3. Add your subclass to your project's Kryo registrator so that Spark is able to serialize it.</p><p>To enable filtering, add partitionFilter object to here.platform.data-processing.executors.debug with two fields:
+- className (string): a fully-qualified name of your own PartitionFilter subclass.
+- param (object): a relevant configuration for running your filter (e.g. partition list, or bounding box).
+  The value of 'param' is passed as is to the constructor of your subclass.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="../driver/config/PartitionFilterConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.PartitionFilterConfig">com.here.platform.data.processing.driver.config.PartitionFilterConfig</a>, <a href="PartitionListFilter.html" class="extype" name="com.here.platform.data.processing.debug.PartitionListFilter">PartitionListFilter</a>, <a href="PartitionListFilterParam.html" class="extype" name="com.here.platform.data.processing.debug.PartitionListFilterParam">PartitionListFilterParam</a></p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.debug.PartitionListFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PartitionListFilterextendsPartitionFilterwithProductwithSerializable"></a>
+      <a id="PartitionListFilter:PartitionListFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PartitionListFilter.html"><span class="name">PartitionListFilter</span></a><span class="params">(<span name="json">json: <span class="extype" name="org.json4s.JValue">JValue</span></span>)</span><span class="result"> extends <a href="PartitionFilter.html" class="extype" name="com.here.platform.data.processing.debug.PartitionFilter">PartitionFilter</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.here.platform.data.processing.debug.package@PartitionListFilterextendsPartitionFilterwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.debug.PartitionListFilterParam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PartitionListFilterParamextendsProductwithSerializable"></a>
+      <a id="PartitionListFilterParam:PartitionListFilterParam"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PartitionListFilterParam.html"><span class="name">PartitionListFilterParam</span></a><span class="params">(<span name="partitions">partitions: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.here.platform.data.processing.debug.package@PartitionListFilterParamextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

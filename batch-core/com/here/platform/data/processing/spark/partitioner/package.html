@@ -1,0 +1,169 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>partitioner - com.here.platform.data.processing.spark.partitioner</title>
+          <meta name="description" content="partitioner - com.here.platform.data.processing.spark.partitioner" />
+          <meta name="keywords" content="partitioner com.here.platform.data.processing.spark.partitioner" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.spark.partitioner.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../../package.html" class="extype" name="com.here.platform.data.processing">processing</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing.spark">spark</a></p>
+        <h1>partitioner</h1><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.spark.partitioner.package" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">partitioner</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.here.platform.data.processing.spark.partitioner.LocalityAwarePartitioner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LocalityAwarePartitionerextendsPartitionNamePartitionerwithProductwithSerializable"></a>
+      <a id="LocalityAwarePartitioner:LocalityAwarePartitioner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LocalityAwarePartitioner.html"><span class="name">LocalityAwarePartitioner</span></a><span class="params">(<span name="numPartitions">numPartitions: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="level">level: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="PartitionNamePartitioner.html" class="extype" name="com.here.platform.data.processing.spark.partitioner.PartitionNamePartitioner">PartitionNamePartitioner</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.spark.partitioner.package@LocalityAwarePartitionerextendsPartitionNamePartitionerwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Class implementing a <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.spark.partitioner.Partitioner" class="extype" target="_top">Partitioner</a> for <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Partition$.Key" class="extype" target="_top">com.here.platform.data.processing.catalog.Partition.Key</a> that is aware of the geographic location
+of the keys and can therefore put keys that are geographically close to each other inside the same partition.</p><div class="fullcomment"><div class="comment cmt"><p>Class implementing a <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.spark.partitioner.Partitioner" class="extype" target="_top">Partitioner</a> for <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Partition$.Key" class="extype" target="_top">com.here.platform.data.processing.catalog.Partition.Key</a> that is aware of the geographic location
+of the keys and can therefore put keys that are geographically close to each other inside the same partition.
+This increases the data locality and speeds up processing of Spark worker nodes.</p><p>This is implemented by detecting which <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Partition$.Key" class="extype" target="_top">com.here.platform.data.processing.catalog.Partition.Key</a> are actually HERE tiles: in this case
+keys are grouped at a given quadtree level, that is generally higher (= lower number) that the level
+of the keys. Keys that are at a level even higher that the one specified, or keys that are not HERE tiles
+are partitioned using their hashcode and spread across all the available partitions.
+For them, data locality is not achieved.
+</p></div><dl class="paramcmts block"><dt class="param">numPartitions</dt><dd class="cmt"><p>the overall number of partitions</p></dd><dt class="param">level</dt><dd class="cmt"><p>the grouping level in case of HERE tile partitions, as level of a quadtree</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>this partitioner can be useful to both minimize data reshuffling in the context of Spark join
+      and group operations and to introduce some data locality when compiling output tiles
+      by having tiles close to each other in the same Spark partition</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.spark.partitioner.NameHashPartitioner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NameHashPartitionerextendsPartitionNamePartitionerwithProductwithSerializable"></a>
+      <a id="NameHashPartitioner:NameHashPartitioner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NameHashPartitioner.html"><span class="name">NameHashPartitioner</span></a><span class="params">(<span name="numPartitions">numPartitions: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="PartitionNamePartitioner.html" class="extype" name="com.here.platform.data.processing.spark.partitioner.PartitionNamePartitioner">PartitionNamePartitioner</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.spark.partitioner.package@NameHashPartitionerextendsPartitionNamePartitionerwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.spark.partitioner.Partitioner" class="extype" target="_top">Partitioner</a> for <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Partition$.Key" class="extype" target="_top">com.here.platform.data.processing.catalog.Partition.Key</a> calculating partition basing on the
+hash code of the name
+</p>
+    </li><li name="com.here.platform.data.processing.spark.partitioner.PartitionNamePartitioner" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PartitionNamePartitionerextendsPartitioner[com.here.platform.data.processing.catalog.Partition.Key]"></a>
+      <a id="PartitionNamePartitioner:PartitionNamePartitioner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PartitionNamePartitioner.html"><span class="name">PartitionNamePartitioner</span></a><span class="result"> extends <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.spark.partitioner.Partitioner" class="extype" target="_top">Partitioner</a>[<span class="extype" name="com.here.platform.data.processing.catalog.Partition.Key">Key</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.spark.partitioner.package@PartitionNamePartitionerextendsPartitioner[com.here.platform.data.processing.catalog.Partition.Key]" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A base class for all Partitioners for <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Partition$.Key" class="extype" target="_top">com.here.platform.data.processing.catalog.Partition.Key</a> that guarantees that only
+the partition name of the key is taken into account when calculating the partition.</p><div class="fullcomment"><div class="comment cmt"><p>A base class for all Partitioners for <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Partition$.Key" class="extype" target="_top">com.here.platform.data.processing.catalog.Partition.Key</a> that guarantees that only
+the partition name of the key is taken into account when calculating the partition. This is important
+so the framework can change keys (that also contains catalog and layer) without changing the name and
+still be sure that the partitioning is not destroyed, improving performances.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

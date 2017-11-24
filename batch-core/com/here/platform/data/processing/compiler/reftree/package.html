@@ -1,0 +1,281 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>reftree - com.here.platform.data.processing.compiler.reftree</title>
+          <meta name="description" content="reftree - com.here.platform.data.processing.compiler.reftree" />
+          <meta name="keywords" content="reftree com.here.platform.data.processing.compiler.reftree" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.compiler.reftree.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../../package.html" class="extype" name="com.here.platform.data.processing">processing</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing.compiler">compiler</a></p>
+        <h1>reftree</h1><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reftree</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.here.platform.data.processing.compiler.reftree.CompileInFn" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CompileInFn[T]extendsSerializable"></a>
+      <a id="CompileInFn[T]:CompileInFn[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompileInFn.html"><span class="name">CompileInFn</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@CompileInFn[T]extendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Front-end of <a href="../RefTreeCompiler.html" class="extype" name="com.here.platform.data.processing.compiler.RefTreeCompiler">com.here.platform.data.processing.compiler.RefTreeCompiler</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Front-end of <a href="../RefTreeCompiler.html" class="extype" name="com.here.platform.data.processing.compiler.RefTreeCompiler">com.here.platform.data.processing.compiler.RefTreeCompiler</a>.
+Produces values of a custom type given input partitions and resolved references.
+These values are then grouped per output partitions and further processed by the back-end.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Users should mix in one of the traits extending this one to their
+      implementation of <a href="../RefTreeCompiler.html" class="extype" name="com.here.platform.data.processing.compiler.RefTreeCompiler">com.here.platform.data.processing.compiler.RefTreeCompiler</a> according to the behaviour wanted.</p></span>, <span class="cmt"><p>The implementation must be <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">scala.Serializable</a> as this is copied to workers
+      and executed inside Spark map functions.</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.compiler.reftree.CompileInFnWithRefs" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CompileInFnWithRefs[T]extendsCompileInFn[T]"></a>
+      <a id="CompileInFnWithRefs[T]:CompileInFnWithRefs[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompileInFnWithRefs.html"><span class="name">CompileInFnWithRefs</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="CompileInFn.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.CompileInFn">CompileInFn</a>[<span class="extype" name="com.here.platform.data.processing.compiler.reftree.CompileInFnWithRefs.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@CompileInFnWithRefs[T]extendsCompileInFn[T]" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.compiler.reftree.CompileInFnWithRefsReturnsReferences" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CompileInFnWithRefsReturnsReferences[T]extendsCompileInFn[T]"></a>
+      <a id="CompileInFnWithRefsReturnsReferences[T]:CompileInFnWithRefsReturnsReferences[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompileInFnWithRefsReturnsReferences.html"><span class="name">CompileInFnWithRefsReturnsReferences</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="CompileInFn.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.CompileInFn">CompileInFn</a>[<span class="extype" name="com.here.platform.data.processing.compiler.reftree.CompileInFnWithRefsReturnsReferences.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@CompileInFnWithRefsReturnsReferences[T]extendsCompileInFn[T]" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.compiler.reftree.Ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RefextendsRefBasewithProductwithSerializable"></a>
+      <a id="Ref:Ref"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Ref.html"><span class="name">Ref</span></a><span class="params">(<span name="refName">refName: <a href="RefTree$.html#RefName=Symbol" class="extmbr" name="com.here.platform.data.processing.compiler.reftree.RefTree.RefName">RefName</a></span>, <span name="layer">layer: (<span class="extype" name="com.here.platform.data.processing.catalog.Catalog.Id">Id</span>, <span class="extype" name="com.here.platform.data.processing.catalog.Layer.Name">Name</span>)</span>, <span name="refs">refs: <a href="Ref.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.Ref">Ref</a>*</span>)</span><span class="result"> extends <a href="RefBase.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.RefBase">RefBase</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@RefextendsRefBasewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Reference from layer A to layer B means that a partition on layer A may potentially require
+one or more partitions on layer B for compilation.</p><div class="fullcomment"><div class="comment cmt"><p>Reference from layer A to layer B means that a partition on layer A may potentially require
+one or more partitions on layer B for compilation.</p><p>Describes a reference that goes from some unknown in this context source layer to the layer defined by the
+field <a href="Ref.html#layer:(com.here.platform.data.processing.catalog.Catalog.Id,com.here.platform.data.processing.catalog.Layer.Name)" class="extmbr" name="com.here.platform.data.processing.compiler.reftree.Ref#layer">layer</a>. It also defines child references that go from the <a href="Ref.html#layer:(com.here.platform.data.processing.catalog.Catalog.Id,com.here.platform.data.processing.catalog.Layer.Name)" class="extmbr" name="com.here.platform.data.processing.compiler.reftree.Ref#layer">layer</a> to other layers.
+</p></div><dl class="paramcmts block"><dt class="param">refName</dt><dd class="cmt"><p>a name of the reference to this layer from . The name must be unique in scope of the whole tree</p></dd><dt class="param">layer</dt><dd class="cmt"><p>the source layer from which the reference refer other layers</p></dd><dt class="param">refs</dt><dd class="cmt"><p>the child references</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.compiler.reftree.RefBase" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RefBaseextendsAnyRef"></a>
+      <a id="RefBase:RefBase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RefBase.html"><span class="name">RefBase</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@RefBaseextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A base for subject and referenced layers.</p><div class="fullcomment"><div class="comment cmt"><p>A base for subject and referenced layers.
+It has a layer and references that reference other layers.
+</p></div></div>
+    </li><li name="com.here.platform.data.processing.compiler.reftree.RefTree" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RefTreeextendsProductwithSerializable"></a>
+      <a id="RefTree:RefTree"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefTree.html"><span class="name">RefTree</span></a><span class="params">(<span name="subjectLayers">subjectLayers: <a href="Subject.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.Subject">Subject</a>*</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@RefTreeextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the reference model that describes hierarchical dependency of a layer on other layers.</p><div class="fullcomment"><div class="comment cmt"><p>Represents the reference model that describes hierarchical dependency of a layer on other layers.
+Hierarchical here means that not only this layer may have references but also the layers that are referenced
+by it may also have their own references.</p><p>The elements of the <a href="RefTree.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.RefTree">RefTree</a> each form the root layers of one reference tree. These layers are also called
+subject layers, as these layers are the point where the compilation process starts, they are the one driving
+the compilation, accessing references and providing material for the compilation of output partitions.</p><p>Example: We have a com.here.platform.data.processing.catalog.Catalog Cat, with a subject <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Layer$" class="extype" target="_top">com.here.platform.data.processing.catalog.Layer</a> A,
+which references objects in a second <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.catalog.Layer$" class="extype" target="_top">com.here.platform.data.processing.catalog.Layer</a> B.
+We assign to this reference a <a href="RefTree$.html#RefName=Symbol" class="extmbr" name="com.here.platform.data.processing.compiler.reftree.RefTree.RefName">com.here.platform.data.processing.compiler.reftree.RefTree.RefName</a> &quot;abReference&quot;. For this case we need
+two levels in the RefTree, the root level defines the subject layer A, the second level defines the reference
+from A to B:</p><p>val exampleRefTree = RefTree(Subject(('Cat, 'A), Ref(RefName(&quot;abReference&quot;), ('Cat, 'B))
+</p></div><dl class="paramcmts block"><dt class="param">subjectLayers</dt><dd class="cmt"><p>Subject layers with defined references</p></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.compiler.reftree.ResolveInFn" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ResolveInFnextendsSerializable"></a>
+      <a id="ResolveInFn:ResolveInFn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ResolveInFn.html"><span class="name">ResolveInFn</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@ResolveInFnextendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Front-end of <a href="../RefTreeCompiler.html" class="extype" name="com.here.platform.data.processing.compiler.RefTreeCompiler">com.here.platform.data.processing.compiler.RefTreeCompiler</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Front-end of <a href="../RefTreeCompiler.html" class="extype" name="com.here.platform.data.processing.compiler.RefTreeCompiler">com.here.platform.data.processing.compiler.RefTreeCompiler</a>.</p><p>Produces references of an input partition. This process is coordinated by <a href="../RefTreeCompiler.html#refStructure:com.here.platform.data.processing.compiler.reftree.RefTree" class="extmbr" name="com.here.platform.data.processing.compiler.RefTreeCompiler#refStructure">com.here.platform.data.processing.compiler.RefTreeCompiler.refStructure</a>.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The implementation must be <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">scala.Serializable</a> as this is copied to workers
+      and executed inside Spark map functions.</p></span></dd></dl></div>
+    </li><li name="com.here.platform.data.processing.compiler.reftree.Subject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SubjectextendsRefBasewithProductwithSerializable"></a>
+      <a id="Subject:Subject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Subject.html"><span class="name">Subject</span></a><span class="params">(<span name="layer">layer: (<span class="extype" name="com.here.platform.data.processing.catalog.Catalog.Id">Id</span>, <span class="extype" name="com.here.platform.data.processing.catalog.Layer.Name">Name</span>)</span>, <span name="refs">refs: <a href="Ref.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.Ref">Ref</a>*</span>)</span><span class="result"> extends <a href="RefBase.html" class="extype" name="com.here.platform.data.processing.compiler.reftree.RefBase">RefBase</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@SubjectextendsRefBasewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The root of the reference tree.</p><div class="fullcomment"><div class="comment cmt"><p>The root of the reference tree. It does not have source layers, only references to target layers.
+There may be several subject layers for one compiler.
+</p></div><dl class="paramcmts block"><dt class="param">layer</dt><dd class="cmt"><p>the layer from which the reference refer other layers</p></dd><dt class="param">refs</dt><dd class="cmt"><p>child references</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.here.platform.data.processing.compiler.reftree.RefTree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RefTree"></a>
+      <a id="RefTree:RefTree"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RefTree$.html"><span class="name">RefTree</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.compiler.reftree.package@RefTree" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

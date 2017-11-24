@@ -1,0 +1,280 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>impl - com.here.platform.data.processing.driver.impl</title>
+          <meta name="description" content="impl - com.here.platform.data.processing.driver.impl" />
+          <meta name="keywords" content="impl com.here.platform.data.processing.driver.impl" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../../index.html';
+            var hash = 'com.here.platform.data.processing.driver.impl.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.here">here</a>.<a href="../../../../package.html" class="extype" name="com.here.platform">platform</a>.<a href="../../../package.html" class="extype" name="com.here.platform.data">data</a>.<a href="../../package.html" class="extype" name="com.here.platform.data.processing">processing</a>.<a href="../package.html" class="extype" name="com.here.platform.data.processing.driver">driver</a></p>
+        <h1>impl</h1><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">impl</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.here.platform.data.processing.driver.impl.CommitProducer" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CommitProducerextendsAnyRef"></a>
+      <a id="CommitProducer:CommitProducer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CommitProducer.html"><span class="name">CommitProducer</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@CommitProducerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Produces commits that should be committed by the <a href="../Driver.html" class="extype" name="com.here.platform.data.processing.driver.Driver">com.here.platform.data.processing.driver.Driver</a> together with the produced map.</p>
+    </li><li name="com.here.platform.data.processing.driver.impl.CompleteConfigLoader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CompleteConfigLoaderextendsCompleteConfig"></a>
+      <a id="CompleteConfigLoader:CompleteConfigLoader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CompleteConfigLoader.html"><span class="name">CompleteConfigLoader</span></a><span class="result"> extends <a href="../config/CompleteConfig.html" class="extype" name="com.here.platform.data.processing.driver.config.CompleteConfig">CompleteConfig</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@CompleteConfigLoaderextendsCompleteConfig" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Loads the configuration from application.conf and/or reference.conf.</p><div class="fullcomment"><div class="comment cmt"><p>Loads the configuration from application.conf and/or reference.conf.
+See https://github.com/typesafehub/config for search path and syntax.</p><p>There may be multiple instances of this class in a single JVM; all of them
+will share the same file-based configuration, but there may be different
+add-ons or overrides given as constructor parameter.
+</p></div></div>
+    </li><li name="com.here.platform.data.processing.driver.impl.DriverContextImpl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DriverContextImplextendsDriverContext"></a>
+      <a id="DriverContextImpl:DriverContextImpl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DriverContextImpl.html"><span class="name">DriverContextImpl</span></a><span class="result"> extends <a href="../DriverContext.html" class="extype" name="com.here.platform.data.processing.driver.DriverContext">DriverContext</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@DriverContextImplextendsDriverContext" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Private implementation of <a href="../DriverContext.html" class="extype" name="com.here.platform.data.processing.driver.DriverContext">com.here.platform.data.processing.driver.DriverContext</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Private implementation of <a href="../DriverContext.html" class="extype" name="com.here.platform.data.processing.driver.DriverContext">com.here.platform.data.processing.driver.DriverContext</a>. This sets up all the common objects that every
+<a href="../Pipeline.html" class="extype" name="com.here.platform.data.processing.driver.Pipeline">com.here.platform.data.processing.driver.Pipeline</a>, <a href="../modes/PipelineMode.html" class="extype" name="com.here.platform.data.processing.driver.modes.PipelineMode">com.here.platform.data.processing.driver.modes.PipelineMode</a> and in general every compiler see.
+</p></div></div>
+    </li><li name="com.here.platform.data.processing.driver.impl.DriverImpl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DriverImplextendsDriverwithContextLogging"></a>
+      <a id="DriverImpl:DriverImpl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DriverImpl.html"><span class="name">DriverImpl</span></a><span class="result"> extends <a href="../Driver.html" class="extype" name="com.here.platform.data.processing.driver.Driver">Driver</a> with <a href="https://olp-arch.jenkins.release.in.here.com/job/ACF/job/stable-acfc/scaladoc/index.html#com.here.platform.data.processing.logging.ContextLogging" class="extype" target="_top">ContextLogging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@DriverImplextendsDriverwithContextLogging" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Main implementation of the <a href="../Driver.html" class="extype" name="com.here.platform.data.processing.driver.Driver">com.here.platform.data.processing.driver.Driver</a> interface.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.here.platform.data.processing.driver.impl.DepResolution" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DepResolution"></a>
+      <a id="DepResolution:DepResolution"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DepResolution$.html"><span class="name">DepResolution</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@DepResolution" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.driver.impl.executors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="executors"></a>
+      <a id="executors:executors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="executors/package.html"><span class="name">executors</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@executors" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.driver.impl.history" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="history"></a>
+      <a id="history:history"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="history/package.html"><span class="name">history</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@history" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.driver.impl.job" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="job"></a>
+      <a id="job:job"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="job/package.html"><span class="name">job</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@job" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.driver.impl.schema" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="schema"></a>
+      <a id="schema:schema"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="schema/package.html"><span class="name">schema</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@schema" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.here.platform.data.processing.driver.impl.state" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="state"></a>
+      <a id="state:state"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="state/package.html"><span class="name">state</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../../index.html#com.here.platform.data.processing.driver.impl.package@state" title="Permalink" target="_top">
+        <img src="../../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
